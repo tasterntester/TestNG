@@ -28,11 +28,13 @@ TestNG Notes and Programming
 
 @BeforeSuite :- It will be run before all tests.
 
-@BeforeTest:- It will be run before executing first test method in any of the class. @BeforeClass :- It will be run before the first test method in current class.
+@BeforeTest:- It will be run before executing first test method in any of the class. 
+
+@BeforeClass :- It will be run before the first test method in current class.
 
 @BeforeMethod :- It will be run before each test method.
 
-> @Test - It is marked as a test case.
+@Test - It is marked as a test case.
 
 @AfterMethod :- It will be run after each test method.
 
