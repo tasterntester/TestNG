@@ -48,10 +48,47 @@ TestNG Notes and Programming
 
 #. @DataProvider will use for data parameterization.
 
-**Note:**
+**NOTE:-**
 
 #. TestNG does not require java main() method for execution.
 
 #. We used @Test to tell that the method under it is a test case.
 
 #. Since we use annotations in TestNG, we needed to import the package org.testng.annotations.*; 
+
+
+**Multiple Test Cases in TestNG:**
+
+#. We can use multiple @Test in a single testNG file.
+
+#. By default, methods annotated by @Test will execute in alphanumeric order.
+
+**Sequencing & Prioritizing in TestNG:**
+
+#. If you want the methods to be executed in your order, then we need to use the 'priority' parameter.
+
+Syntax:
+
+@Test(priority = 1/0/-1)
+
+2 test methods:- -ve pri
+
+2 test methods:- no priority
+
+5 test method:- +ve pri
+
+suppose we have this priorities like -5, 6, -1, 0, 1, -, - (- is blank here) so what will be the test priorities?
+
+-5, -1, -, 0, -, 1, 6 = solution 
+
+**NOTE:-**
+
+#. Sequence of execution is in ascending order.
+
+#. smallest priority value will have first execution.
+
+#. There is no need for priority value should be consecutive.
+
+#. We can set -ve priority too, And the smallest value will execute first.
+
+#. If priority = same, the test method execution will execute on the basis of alphanumeric order.
