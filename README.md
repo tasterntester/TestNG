@@ -92,3 +92,11 @@ suppose we have this priorities like -5, 6, -1, 0, 1, -, - (- is blank here) so 
 #. We can set -ve priority too, And the smallest value will execute first.
 
 #. If priority = same, the test method execution will execute on the basis of alphanumeric order.
+
+
+Dependent Test Cases in TestNG:
+
+@Test(dependsOnMethod = {"methodName"});
+
+
+
